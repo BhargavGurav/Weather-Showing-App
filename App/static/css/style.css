@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+}
+.main-container img{
+    height: 50px;
+    width: 50px;
+    
+}
+
+.middle-container{
+    height: 84.2vh;
+}
+.result-col table{
+    border-radius: 7px !important;
+}

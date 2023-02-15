@@ -1,0 +1,43 @@
+{% extends 'home.html' %}
+{% block container-div %}
+<div class="col-lg-6 col-md-8 col-sm-11 result-col">
+    <table class="table table-bordered able-hover table-dark" data-aos="zoom-in" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+       
+        <tbody>
+            <tr>
+                <td>Place </td>
+                <td>{{place}}</td>
+            </tr>
+            <tr>
+                <td>Cloud </td>
+                <td>{{cloud}}</td>
+            </tr>
+            <tr>
+                <td>Temperature </td>
+                <td>{{deg}} °C</td>
+            </tr>
+            <tr>
+                <td>Maximum Temperature </td>
+                <td>{{maxdeg}} °C</td>
+            </tr>
+            <tr>
+                <td>Minimum Temperature </td>
+                <td>{{mindeg}} °C</td>
+            </tr>
+            <tr>
+                <td>Pressure </td>
+                <td>{{pressure}}</td>
+            </tr>
+            <tr>
+                <td>Wind Speed </td>
+                <td>{{windspeed}} m/s</td>
+            </tr>
+            <tr>
+                <td>Wind Temperature </td>
+                <td>{{winddeg}} °C</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{% url 'home' %}" class="btn btn-outline-primary p-1 float-end">Back To Home</a>
+</div>
+{% endblock %}
